@@ -1,0 +1,98 @@
+:root {
+    --purple: #800080; /* Set your desired purple color code */
+}
+
+/* Override styles for the primary color */
+.table-primary,
+.bg-primary,
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:disabled,
+.navbar .navbar-toggler-icon,
+.form-control,
+.form-select,
+.input-group-text {
+    background-color: var(--purple);
+    border-color: var(--purple);
+    color: #fff; /* Set text color to white or another color that works well with your purple */
+}
+
+.form-control:focus,
+.form-select:focus,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show >.btn-primary.dropdown-toggle {
+    box-shadow: 0 0 0 0.25rem rgba(var(--purple), 0.5);
+}
+
+.form-control:focus {
+    border-color: var(var(--purple)) !important;
+    box-shadow: 0 0 0 0.2rem var(var(--purple)) !important;
+}
+
+.form-control, .form-select {
+    background-color: var(var(--purple)) !important;
+}
+
+.form-select:focus {
+    border-color: var(var(--purple)) !important;
+    box-shadow: 0 0 0 0.2rem var(var(--purple)) !important;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; /* Set the background color of the navbar toggler icon */
+}
+
+/* Override styles for pagination */
+.page-item.active .page-link,
+.page-item:hover .page-link,
+.page-link {
+    color: var(--purple); /* Set default text color to purple */
+}
+
+.page-item.active .page-link,
+.page-item:hover .page-link {
+    background-color: var(--purple);
+    border-color: var(--purple);
+    color: #fff; /* Set text color to white when selected */
+}
+
+.page-item.active .page-link:focus {
+    box-shadow: 0 0 0 0.25rem rgba(var(--purple), 0.5);
+}
+
+/* Override styles for previous and next buttons */
+.page-item.prev .page-link,
+.page-item.next .page-link {
+    background-color: var(--purple);
+    border-color: var(--purple);
+    color: #fff; /* Set text color to white */
+}
+
+.page-item.prev .page-link:focus,
+.page-item.next .page-link:focus {
+    box-shadow: 0 0 0 0.25rem rgba(var(--purple), 0.5) !important;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(89, 9, 121) 35%, rgb(98, 0, 255) 100%);
+    color: var(--purple);
+}
+
+.container {
+    background: var(--purple);
+    color: var(--purple);
+}
+
+table {
+    background: var(--purple) !important;
+    color: var(--purple) !important;
+}
+
+.table {
+    background: var(--purple) !important;
+    color: var(--purple) !important;
+}
